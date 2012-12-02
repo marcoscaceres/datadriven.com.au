@@ -22,8 +22,11 @@ body{
 a:link, a:visited{
 	color: $orange;
 	text-decoration: none;
-}
+} 
 
+cite{
+	font-style: italic;
+}
 
 header{
     hgroup{
@@ -199,6 +202,7 @@ p{
 	padding: 1em;
 	font-size: 1em;
 	padding-bottom: .8em;
+	line-height: 1.3em;
 }
 
 @media all and (max-width: 650px) {
