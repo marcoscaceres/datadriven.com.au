@@ -13,10 +13,19 @@ $blue: #005b9c;
 $orange: #ee432a; 
 $font: sans-serif;
 
+html{
+    background-color: rgb(73,77,91); // Old browsers
+    @include filter-gradient(#494d5b, #2d3341, vertical); // IE6-9
+    @include background-image(linear-gradient(top,  rgba(73,77,91,1) 0%,rgba(45,51,65,1) 100%));
+    @include box-shadow(#666 0 .05cm .2cm);
+}
+
 body{
     font-family: $font; 
 	background: no-repeat url('/img/mountain_man.gif');
     background-position: bottom center;	 
+    background-color: white;
+    @include box-shadow(#222 .2cm .5cm .5cm);
 }
 
 a:link, a:visited{
@@ -243,7 +252,7 @@ p{
 	
 }
 
-@media all and (min-width: 600px){
+@media all and (min-width: 37.5em){
 	body{
 		font-size: 1.4em;
 	}
@@ -262,7 +271,8 @@ p{
 	header{
 		nav{
 			ul{
-				line-height: 1.5cm;
+				line-height: 1.2cm;
+				font-size: 1em;
 			}
 		}
 	}
