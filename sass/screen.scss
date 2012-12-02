@@ -20,8 +20,10 @@ body{
 }
 
 a:link, a:visited{
+	color: $orange;
 	text-decoration: none;
 }
+
 
 header{
     hgroup{
@@ -85,9 +87,19 @@ article{
         color: $orange;
         font-size: 1.6em;
         font-weight: bold;
-        margin: 1cm;
-		margin-bottom: 1.5cm;
+        margin: 1em;
     }
+}
+
+article{
+	ul{
+		list-style-type: disc;
+		font-size: .8em;
+		padding-left: 3em;
+	}
+	li{
+		padding: .2em 
+	}
 }
 
 #aboutme{
@@ -166,6 +178,7 @@ footer{
 	padding:.3cm 1cm;
 	text-decoration:none;
 	text-shadow:1px 1px 0px #ffffff;
+	margin-top: 2em;
 }
 
 .button:hover {
@@ -182,12 +195,19 @@ footer{
 	text-align: center;
 }
 
+p{
+	padding: 1em;
+	font-size: 1em;
+	padding-bottom: .8em;
+}
+
 @media all and (max-width: 650px) {
 	header{
  	   hgroup{
 	 	background: no-repeat bottom right url('/img/crane_650.gif');
 	   }
 	}
+
 }
 
 
@@ -197,6 +217,15 @@ footer{
 	 	background: no-repeat bottom right url('/img/crane_1024.gif');
 	   }
 	}
+}
+
+@media all and (min-width: 1024px) {
+	header{
+ 	   hgroup{
+	 		background: no-repeat bottom right url('/img/crane_1024.gif'), 
+	 			 bottom left repeat-x url('/img/crane_1024.gif');
+	   }
+	}	
 }
 
 @media all and (orientation: landscape) and (max-width : 321px) {

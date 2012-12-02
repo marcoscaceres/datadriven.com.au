@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 20, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 101, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 114, ../../../../../../../Applications/LiveReload.app/Contents/Resources/SASS.lrplugin/lib/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -76,29 +76,30 @@ body {
 
 /* line 22, ../sass/screen.scss */
 a:link, a:visited {
+  color: #ee432a;
   text-decoration: none;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 header hgroup {
   min-height: 3cm;
   font-weight: bold;
   border-bottom: thin solid #9b2611;
 }
-/* line 31, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 header hgroup h1 {
   font-size: 1.4em;
   padding-left: .3cm;
   padding-top: .3cm;
   color: #005b9c;
 }
-/* line 38, ../sass/screen.scss */
+/* line 40, ../sass/screen.scss */
 header hgroup h2 {
   font-size: .9em;
   padding-left: .4cm;
   color: #ee432a;
 }
-/* line 44, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 header hgroup h3 {
   color: #005b9c;
   font-size: .7em;
@@ -112,7 +113,7 @@ header hgroup h3 {
   -o-transform: rotate(15deg);
   transform: rotate(15deg);
 }
-/* line 57, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 header nav {
   border-top: thin solid #7a7f86;
   border-bottom: thin solid #07080a;
@@ -129,49 +130,59 @@ header nav {
   -moz-box-shadow: #666666 0 0.05cm 0.2cm;
   box-shadow: #666666 0 0.05cm 0.2cm;
 }
-/* line 65, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 header nav a:link, header nav a:visited {
   color: white;
   text-decoration: none;
 }
-/* line 70, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 header nav ul {
   line-height: 1cm;
   width: auto;
   text-align: center;
 }
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 header nav ul li {
   display: inline-block;
   width: 30%;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 article > h1 {
   text-align: center;
   color: #ee432a;
   font-size: 1.6em;
   font-weight: bold;
-  margin: 1cm;
-  margin-bottom: 1.5cm;
+  margin: 1em;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
+article ul {
+  list-style-type: disc;
+  font-size: .8em;
+  padding-left: 3em;
+}
+/* line 100, ../sass/screen.scss */
+article li {
+  padding: 0.2em;
+}
+
+/* line 105, ../sass/screen.scss */
 #aboutme {
   margin: 0 1cm 0 1cm;
   color: #005b9c;
 }
-/* line 97, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 #aboutme h1 {
   display: none;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #shortdesc {
   display: inline-block;
   margin: -1em;
 }
-/* line 105, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 #shortdesc #me {
   float: left;
   border: 4px solid white;
@@ -189,7 +200,7 @@ article > h1 {
   height: 2.5cm;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 129, ../sass/screen.scss */
 #longdesc {
   margin: .5cm 0 1.5cm 0;
   font-size: 1em;
@@ -199,12 +210,12 @@ article > h1 {
   line-height: 1.2em;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 footer {
   min-height: 4.2cm;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .specs dt {
   text-overflow: ellipsis;
   width: auto;
@@ -227,7 +238,7 @@ footer {
 }
 
 /* This imageless css button was generated by CSSButtonGenerator.com */
-/* line 153, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .button {
   box-shadow: inset 0px 1px 0px 0px #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
@@ -244,9 +255,10 @@ footer {
   padding: .3cm 1cm;
   text-decoration: none;
   text-shadow: 1px 1px 0px #ffffff;
+  margin-top: 2em;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .button:hover {
   background-image: linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed);
   *zoom: 1;
@@ -254,64 +266,77 @@ footer {
   background-color: #dfdfdf;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .button:active {
   position: relative;
   top: 1px;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .contact {
   text-align: center;
 }
 
+/* line 198, ../sass/screen.scss */
+p {
+  padding: 1em;
+  font-size: 1em;
+  padding-bottom: .8em;
+}
+
 @media all and (max-width: 650px) {
-  /* line 187, ../sass/screen.scss */
+  /* line 206, ../sass/screen.scss */
   header hgroup {
     background: no-repeat bottom right url("/img/crane_650.gif");
   }
 }
 @media all and (max-width: 1024px) {
-  /* line 196, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   header hgroup {
     background: no-repeat bottom right url("/img/crane_1024.gif");
   }
 }
+@media all and (min-width: 1024px) {
+  /* line 224, ../sass/screen.scss */
+  header hgroup {
+    background: no-repeat bottom right url("/img/crane_1024.gif"), bottom left repeat-x url("/img/crane_1024.gif");
+  }
+}
 @media all and (orientation: landscape) and (max-width : 321px) {
-  /* line 203, ../sass/screen.scss */
+  /* line 232, ../sass/screen.scss */
   #shortdesc {
     margin: 0em;
     font-size: 1.4em;
   }
 
-  /* line 207, ../sass/screen.scss */
+  /* line 236, ../sass/screen.scss */
   #longdesc {
     font-size: 1.2em;
   }
 }
 @media all and (min-width: 600px) {
-  /* line 214, ../sass/screen.scss */
+  /* line 243, ../sass/screen.scss */
   body {
     font-size: 1.4em;
   }
 
-  /* line 219, ../sass/screen.scss */
+  /* line 248, ../sass/screen.scss */
   #shortdesc #me {
     width: 3cm;
     height: 3cm;
   }
 
-  /* line 225, ../sass/screen.scss */
+  /* line 254, ../sass/screen.scss */
   article {
     padding: 0 8%;
   }
 
-  /* line 231, ../sass/screen.scss */
+  /* line 260, ../sass/screen.scss */
   header nav ul {
     line-height: 1.5cm;
   }
 
-  /* line 237, ../sass/screen.scss */
+  /* line 266, ../sass/screen.scss */
   #longdesc {
     margin-top: 1.5cm;
   }
