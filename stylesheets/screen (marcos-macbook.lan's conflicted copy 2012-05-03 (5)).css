@@ -1,0 +1,78 @@
+/*
+Syntax error: Invalid CSS after "...hadow(#666 0 0 ": expected ")", was ".cm .02cm);"
+        on line 57 of /Users/marcosscaceres/Dropbox/datadriven.com.au/sass/screen.scss
+
+Backtrace:
+/Users/marcosscaceres/Dropbox/datadriven.com.au/sass/screen.scss:57
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:898:in `expected'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/script/lexer.rb:193:in `expected!'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/script/parser.rb:448:in `assert_tok'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/script/parser.rb:85:in `parse_mixin_include_arglist'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:788:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:788:in `sass_script'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:142:in `include_directive'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:130:in `send'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:130:in `special_directive'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:109:in `directive'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:380:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:372:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:361:in `block'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:355:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:417:in `declaration_or_ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:872:in `call'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:872:in `rethrow'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:418:in `declaration_or_ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:380:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:372:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:361:in `block'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:355:in `ruleset'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:379:in `block_child'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:372:in `block_contents'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:57:in `stylesheet'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/scss/parser.rb:26:in `parse'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:319:in `_to_tree'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:291:in `_render'
+/Library/Ruby/Gems/1.8/gems/sass-3.1.1/lib/sass/../sass/engine.rb:238:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/compiler.rb:140:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/compiler.rb:139:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/logger.rb:45:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/compiler.rb:138:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/compiler.rb:118:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/compiler.rb:103:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/compiler.rb:101:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/compiler.rb:101:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/compiler.rb:126:in `timed'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/compiler.rb:100:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/commands/watch_project.rb:147:in `recompile'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/rubygems/custom_require.rb:31:in `to_proc'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/path.rb:73:in `call'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/path.rb:73:in `run_callback'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/path.rb:55:in `callback_action'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/path.rb:35:in `update'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:39:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:37:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:37:in `modified'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/state/directory.rb:18:in `refresh'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:17:in `each'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:17:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:15:in `loop'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/backends/polling.rb:15:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm/monitor.rb:26:in `run'
+/Library/Ruby/Gems/1.8/gems/fssm-0.2.8.1/lib/fssm.rb:70:in `monitor'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/commands/watch_project.rb:87:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/bin/compass:29
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/bin/compass:43:in `call'
+/Library/Ruby/Gems/1.8/gems/compass-0.12.1/bin/compass:43
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"...hadow(#666 0 0 \": expected \")\", was \".cm .02cm);\"\A         on line 57 of /Users/marcosscaceres/Dropbox/datadriven.com.au/sass/screen.scss"; }

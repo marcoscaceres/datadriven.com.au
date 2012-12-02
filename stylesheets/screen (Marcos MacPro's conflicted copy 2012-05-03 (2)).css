@@ -1,0 +1,160 @@
+@import url(/css/style.css);
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 12, ../sass/screen.scss */
+body {
+  font-family: sans-serif;
+}
+
+/* line 23, ../sass/screen.scss */
+header hgroup {
+  background: no-repeat url("/img/craine.png");
+  background-position: bottom right;
+  min-height: 3cm;
+  font-weight: bold;
+  border-bottom: thin solid #9b2611;
+}
+/* line 29, ../sass/screen.scss */
+header hgroup h1 {
+  font-size: 1.4em;
+  padding-left: .3cm;
+  padding-top: .3cm;
+  color: #005b9c;
+}
+/* line 36, ../sass/screen.scss */
+header hgroup h2 {
+  font-size: .9em;
+  padding-left: .3cm;
+  color: #ee432a;
+}
+/* line 42, ../sass/screen.scss */
+header hgroup h3 {
+  color: #005b9c;
+  font-size: .7em;
+  position: absolute;
+  right: 2cm;
+  top: 1.8cm;
+  font-weight: normal;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+/* line 53, ../sass/screen.scss */
+header nav {
+  border-top: thin solid #7a7f86;
+  background-color: #494d5b;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF494D5B', endColorstr='#FF2D3341');
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494d5b), color-stop(100%, #2d3341));
+  background-image: -webkit-linear-gradient(top, #494d5b 0%, #2d3341 100%);
+  background-image: -moz-linear-gradient(top, #494d5b 0%, #2d3341 100%);
+  background-image: -o-linear-gradient(top, #494d5b 0%, #2d3341 100%);
+  background-image: -ms-linear-gradient(top, #494d5b 0%, #2d3341 100%);
+  background-image: linear-gradient(top, #494d5b 0%, #2d3341 100%);
+}
+/* line 59, ../sass/screen.scss */
+header nav a:link, header nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+/* line 64, ../sass/screen.scss */
+header nav ul {
+  line-height: 1cm;
+  width: auto;
+  text-align: center;
+}
+/* line 68, ../sass/screen.scss */
+header nav ul li {
+  display: inline-block;
+  width: 30%;
+}
+
+/* line 77, ../sass/screen.scss */
+article > h1 {
+  text-align: center;
+  color: #ee432a;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 1cm 0 1cm 0;
+}
+
+/* line 86, ../sass/screen.scss */
+#aboutme {
+  color: #005b9c;
+  clear: both;
+}
+/* line 89, ../sass/screen.scss */
+#aboutme img {
+  float: left;
+}
+/* line 93, ../sass/screen.scss */
+#aboutme p {
+  font-size: 1.8em;
+}
