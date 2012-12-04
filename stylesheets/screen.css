@@ -325,7 +325,7 @@ p {
 @media all and (min-width: 1024px) {
   /* line 237, ../sass/screen.scss */
   header hgroup {
-    background: no-repeat bottom right url("/img/crane_1024.gif"), bottom left repeat-x url("/img/crane_1024.gif");
+    background: no-repeat bottom right url("/img/crane_1024.gif"), bottom left repeat-x url("/img/lines.gif");
   }
 }
 @media all and (orientation: landscape) and (max-width : 321px) {
