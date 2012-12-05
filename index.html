@@ -1,12 +1,79 @@
-<!--#include virtual="/templates/head.html" -->
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,target-densitydpi=device-dpi">
+<title>Data.Driven - Raise Your Standards</title>
+<link href="/css/style.css" media="screen, projection" rel="stylesheet">
+<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet">
+<link href="/stylesheets/print.css" media="print" rel="stylesheet">
+</head> 
 <body>
-<!--#include virtual="/templates/nav.html"-->
-<article>
+<header>
+  <hgroup><a href="/#">
+    <h1>Data.Driven</h1>
+    <h2>Web standards consultancy</h2>
+    </a>
+    <h3>Raise your standards</h3>
+  </hgroup>
+  <nav>
+    <ul>
+      <a href="/#aboutme/"><li>About</li></a>
+      <a href="/#services/"><li>Services</li></a>
+    </ul>
+  </nav>
+</header>
+<article id="aboutme">
 <h1>Standards, Prototypes, and Quality Assurance.</h1>
-<section id="aboutme">
-  <h1>About Me</h1>
-  <p id="shortdesc"> <img width="150" height="150" id="me" src="img/marcos_caceres.jpg" alt="Marcos Cáceres">Hi, I'm Marcos Cáceres. I write technical specifications, prototype specs, create test suites, and provide advice on activities at the W3C.</p>
-  <p class="contact"><a class="button" href="mailto:marcos@datadriven.com.au">Get in touch!</a></p>
+<section>
+ <div><img width="150" height="150" id="me" src="img/marcos_caceres.jpg" alt="Marcos Cáceres">
+ <p id="shortdesc">Hi, I'm Marcos Cáceres. I write specifications, create prototypes and test suites, and  advise on activities at the W3C.</p></div>
 </section>
 </article>
+<article id="services">
+<section>
+  <h1>Web Standards</h1>
+  <p>Writing a specification that builds on the Web Platform requires in-depth knowledge of its core technologies: <cite>HTML5</cite>, <cite>Web IDL</cite>, and <cite>ECMAScript</cite>. I can edit and review  specifications to make sure they will work well with the core Web Platform.  </p>
+  </section>
+  <section>
+  <h1>Prototypes</h1>
+  <p>Independent verification of a specification through prototyping can be a cost effective way of showing the technical completeness of a specification and demonstrating that a specification works as intended. I can prototype specifications in <cite>ECMAScript</cite>, <cite>Node.js</cite>, and <cite>Java</cite>. </p>
+  </section>
+  <section>
+  <h1>Quality Assurance</h1>
+  <p>Test suites are key to achieving interoperability in the standardization process. Knowing how much and what areas to test can improve the interoperability of products. I can design, code, or review test suites as well as produce high-quality implementation reports. </p>
+</section>
+</article>
+<p class="contact"><a class="button" href="mailto:marcos@datadriven.com.au">Get in touch!</a></p>
 <footer></footer>
+<script>
+(function(window){
+	var services = document.getElementById("services"),
+		aboutme = document.getElementById("aboutme"); 
+	
+	window.addEventListener("DOMContentLoaded", doMagic);
+	
+	
+	function doMagic(){
+		updateLayout(); 
+		window.document.documentElement.setAttribute("class", "js");
+		window.addEventListener("hashchange", updateLayout)
+	}
+	function updateLayout(e){
+		if(e){
+			e.preventDefault();	
+		}
+		switch(window.location.hash){
+			case ("#services/"):{
+				services.className = "show";
+				aboutme.className = "hide";
+				break;
+			}
+			default:{
+				services.className = "hide";
+				aboutme.className = "show";
+			}
+		}
+	}
+}(this))
+</script>
