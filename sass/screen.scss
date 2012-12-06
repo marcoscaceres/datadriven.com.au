@@ -227,15 +227,16 @@ article{
 }
 
 .js .hide{
+	background-color: white;
 	display: hidden;
 	position: absolute;
-	height: 1em;
 	overflow: hidden;
-	-webkit-transition: opacity .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
 	-moz-transition: opacity .2s ease-in-out;
 	-o-transition: opacity .2s ease-in-out;
 	transition: opacity .2s ease-in-out;
 	opacity: 0; 
+	height: .001em;
 }
 
 .js .show{

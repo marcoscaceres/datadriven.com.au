@@ -359,18 +359,19 @@ article h1 {
 
 /* line 229, ../sass/screen.scss */
 .js .hide {
+  background-color: white;
   display: hidden;
   position: absolute;
-  height: 1em;
   overflow: hidden;
-  -webkit-transition: opacity .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -o-transition: opacity .2s ease-in-out;
   transition: opacity .2s ease-in-out;
   opacity: 0;
+  height: .001em;
 }
 
-/* line 241, ../sass/screen.scss */
+/* line 242, ../sass/screen.scss */
 .js .show {
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
@@ -379,85 +380,85 @@ article h1 {
   opacity: 1;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 #shortdesc {
   padding: 0;
   margin: 0;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 #services {
   margin-top: 2em;
 }
-/* line 256, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 #services h1 {
   margin: .7em 0 0 0;
   padding: 0;
 }
 
 @media all and (max-width: 650px) {
-  /* line 269, ../sass/screen.scss */
+  /* line 270, ../sass/screen.scss */
   header hgroup {
     background: no-repeat bottom right url("/img/crane_650.gif");
   }
 }
 @media all and (min-width: 651px) {
-  /* line 279, ../sass/screen.scss */
+  /* line 280, ../sass/screen.scss */
   html {
     height: 100%;
   }
 
-  /* line 283, ../sass/screen.scss */
+  /* line 284, ../sass/screen.scss */
   header hgroup {
     background: no-repeat bottom right url("/img/crane_1024.gif"), bottom left repeat-x url("/img/lines.gif");
   }
 
-  /* line 289, ../sass/screen.scss */
+  /* line 290, ../sass/screen.scss */
   #services {
     display: block;
   }
-  /* line 292, ../sass/screen.scss */
+  /* line 293, ../sass/screen.scss */
   #services section {
     vertical-align: top;
     width: 32%;
     display: inline-block;
   }
-  /* line 297, ../sass/screen.scss */
+  /* line 298, ../sass/screen.scss */
   #services h1 {
     font-size: 1.2em;
     white-space: nowrap;
     margin-bottom: .2em;
   }
-  /* line 302, ../sass/screen.scss */
+  /* line 303, ../sass/screen.scss */
   #services p {
     line-height: 1.5em;
     font-size: .8em;
   }
 }
 @media all and (orientation: landscape) and (max-width : 321px) {
-  /* line 310, ../sass/screen.scss */
+  /* line 311, ../sass/screen.scss */
   #shortdesc {
     font-size: 1.4em;
   }
 }
 @media all and (min-width: 37.5em) {
-  /* line 316, ../sass/screen.scss */
+  /* line 317, ../sass/screen.scss */
   p {
     font-size: 1.2em;
   }
 
-  /* line 320, ../sass/screen.scss */
+  /* line 321, ../sass/screen.scss */
   #me {
     width: 3cm;
     height: 3cm;
   }
 
-  /* line 325, ../sass/screen.scss */
+  /* line 326, ../sass/screen.scss */
   article {
     padding: 0 8%;
   }
 
-  /* line 331, ../sass/screen.scss */
+  /* line 332, ../sass/screen.scss */
   header nav ul {
     line-height: 1.2cm;
     font-size: 1em;
