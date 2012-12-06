@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -67,77 +68,140 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 16, ../sass/screen.scss */
-html {
-  background-color: #494d5b;
-  *zoom: 1;
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF494D5B', endColorstr='#FF2D3341');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #494d5b), color-stop(100%, #2d3341));
-  background-image: -webkit-linear-gradient(top, #494d5b 0%, #2d3341 100%);
-  background-image: -moz-linear-gradient(top, #494d5b 0%, #2d3341 100%);
-  background-image: -o-linear-gradient(top, #494d5b 0%, #2d3341 100%);
-  background-image: -ms-linear-gradient(top, #494d5b 0%, #2d3341 100%);
-  background-image: linear-gradient(top, #494d5b 0%, #2d3341 100%);
-  -webkit-box-shadow: #666666 0 0.05cm 0.2cm;
-  -moz-box-shadow: #666666 0 0.05cm 0.2cm;
-  box-shadow: #666666 0 0.05cm 0.2cm;
+@font-face {
+  font-family: 'icons';
+  src: url("/font/icons.eot");
+  src: url("/font/icons.eot?#iefix") format("embedded-opentype"), url("/font/icons.woff") format("woff"), url("/font/icons.ttf") format("truetype"), url("/font/icons.svg#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - magrins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+/* line 43, ../sass/screen.scss */
+.icon-cog-alt:before {
+  content: '\26ef';
+}
+
+/* '⛯' */
+/* line 44, ../sass/screen.scss */
+.icon-mail:before {
+  content: '\2709';
+}
+
+/* '✉' */
+/* line 45, ../sass/screen.scss */
+.icon-tasks:before {
+  content: '\f0ae';
+}
+
+/* '' */
+/* line 46, ../sass/screen.scss */
+.icon-beaker:before {
+  content: '\f0c3';
+}
+
+/* '' */
+/* line 47, ../sass/screen.scss */
+.icon-docs:before {
+  content: '\f0c5';
+}
+
+/* '' */
+/* line 48, ../sass/screen.scss */
+.icon-mail-alt:before {
+  content: '\f0e0';
+}
+
+/* '' */
+/* line 49, ../sass/screen.scss */
+.icon-user:before {
+  content: '👤';
+}
+
+/* '\1f464' */
+/* line 55, ../sass/screen.scss */
+html {
+  background-color: white;
+  background: no-repeat url("/img/mountain_man.gif");
+  background-position: bottom center;
+  height: auto;
+}
+
+/* line 62, ../sass/screen.scss */
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 body {
   font-family: sans-serif;
-  background: no-repeat url("/img/mountain_man.gif");
-  background-position: bottom center;
-  background-color: white;
-  -webkit-box-shadow: #222222 0.2cm 0.5cm 0.5cm;
-  -moz-box-shadow: #222222 0.2cm 0.5cm 0.5cm;
-  box-shadow: #222222 0.2cm 0.5cm 0.5cm;
+  height: 100%;
+  margin-bottom: 3cm;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 a:link, a:visited {
   color: #ee432a;
   text-decoration: none;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 cite {
   font-style: italic;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 p {
-  padding: 1em;
+  padding: .5em 1em .8em 1em;
   font-size: 1em;
-  padding-bottom: .8em;
   line-height: 1.3em;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 header hgroup {
   min-height: 3cm;
   font-weight: bold;
   border-bottom: thin solid #9b2611;
 }
-/* line 56, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 header hgroup h1 {
   font-size: 1.4em;
   padding-left: .3cm;
   padding-top: .3cm;
   color: #005b9c;
 }
-/* line 63, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 header hgroup h2 {
   font-size: .9em;
   padding-left: .4cm;
   color: #ee432a;
 }
-/* line 69, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 header hgroup h3 {
   color: #005b9c;
   font-size: .7em;
@@ -151,7 +215,7 @@ header hgroup h3 {
   -o-transform: rotate(15deg);
   transform: rotate(15deg);
 }
-/* line 82, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 header nav {
   border-top: thin solid #7a7f86;
   border-bottom: thin solid #07080a;
@@ -168,54 +232,60 @@ header nav {
   -moz-box-shadow: #666666 0 0.05cm 0.2cm;
   box-shadow: #666666 0 0.05cm 0.2cm;
 }
-/* line 90, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 header nav a:link, header nav a:visited {
   color: white;
   text-decoration: none;
 }
-/* line 95, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 header nav ul {
   line-height: 1cm;
   width: auto;
   text-align: center;
 }
-/* line 99, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 header nav ul li {
   display: inline-block;
   width: 40%;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .no-js nav {
   height: .5cm;
 }
 
-/* line 110, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .no-js nav ul li {
   display: none;
 }
 
-/* line 114, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 article {
-  margin: 0 .5cm 0 .5cm;
+  margin: auto;
+  max-width: 55em;
 }
-/* line 115, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 article h1 {
   text-align: center;
   color: #ee432a;
   font-size: 1.6em;
   font-weight: bold;
-  margin: 1em;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
+#aboutme {
+  margin-top: 2em;
+  padding: 0 1em 0 1em;
+  max-width: 30em;
+}
+/* line 165, ../sass/screen.scss */
 #aboutme p {
   color: #005b9c;
   display: block;
   margin-top: .5cm;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 #me {
   float: left;
   border: .2em solid white;
@@ -233,19 +303,14 @@ article h1 {
   height: 2.5cm;
 }
 
-/* line 144, ../sass/screen.scss */
-footer {
-  min-height: 4.2cm;
-}
-
 /* This imageless css button was generated by CSSButtonGenerator.com */
-/* line 149, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .contact {
   display: block;
   clear: both;
 }
 
-/* line 153, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .button {
   box-shadow: inset 0 0.0625em 0 0 #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf));
@@ -265,7 +330,7 @@ footer {
   margin-top: 2em;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .button:hover {
   background-image: linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed);
   *zoom: 1;
@@ -273,21 +338,31 @@ footer {
   background-color: #dfdfdf;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .button:active {
   position: relative;
   top: 0.0625em;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .contact {
   text-align: center;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
+#orient {
+  -webkit-transition: all .1ems ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+
+/* line 229, ../sass/screen.scss */
 .js .hide {
   display: hidden;
   position: absolute;
+  height: 1em;
+  overflow: hidden;
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
   -o-transition: opacity .2s ease-in-out;
@@ -295,7 +370,7 @@ footer {
   opacity: 0;
 }
 
-/* line 195, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 .js .show {
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
@@ -304,54 +379,85 @@ footer {
   opacity: 1;
 }
 
-/* line 203, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 #shortdesc {
   padding: 0;
   margin: 0;
 }
 
+/* line 254, ../sass/screen.scss */
+#services {
+  margin-top: 2em;
+}
+/* line 256, ../sass/screen.scss */
+#services h1 {
+  margin: .7em 0 0 0;
+  padding: 0;
+}
+
 @media all and (max-width: 650px) {
-  /* line 210, ../sass/screen.scss */
+  /* line 269, ../sass/screen.scss */
   header hgroup {
     background: no-repeat bottom right url("/img/crane_650.gif");
   }
 }
-@media all and (max-width: 1024px) {
-  /* line 219, ../sass/screen.scss */
-  header hgroup {
-    background: no-repeat bottom right url("/img/crane_1024.gif");
+@media all and (min-width: 651px) {
+  /* line 279, ../sass/screen.scss */
+  html {
+    height: 100%;
   }
-}
-@media all and (min-width: 1024px) {
-  /* line 227, ../sass/screen.scss */
+
+  /* line 283, ../sass/screen.scss */
   header hgroup {
     background: no-repeat bottom right url("/img/crane_1024.gif"), bottom left repeat-x url("/img/lines.gif");
   }
+
+  /* line 289, ../sass/screen.scss */
+  #services {
+    display: block;
+  }
+  /* line 292, ../sass/screen.scss */
+  #services section {
+    vertical-align: top;
+    width: 32%;
+    display: inline-block;
+  }
+  /* line 297, ../sass/screen.scss */
+  #services h1 {
+    font-size: 1.2em;
+    white-space: nowrap;
+    margin-bottom: .2em;
+  }
+  /* line 302, ../sass/screen.scss */
+  #services p {
+    line-height: 1.5em;
+    font-size: .8em;
+  }
 }
 @media all and (orientation: landscape) and (max-width : 321px) {
-  /* line 235, ../sass/screen.scss */
+  /* line 310, ../sass/screen.scss */
   #shortdesc {
     font-size: 1.4em;
   }
 }
 @media all and (min-width: 37.5em) {
-  /* line 241, ../sass/screen.scss */
-  body {
-    font-size: 1.4em;
+  /* line 316, ../sass/screen.scss */
+  p {
+    font-size: 1.2em;
   }
 
-  /* line 245, ../sass/screen.scss */
+  /* line 320, ../sass/screen.scss */
   #me {
     width: 3cm;
     height: 3cm;
   }
 
-  /* line 250, ../sass/screen.scss */
+  /* line 325, ../sass/screen.scss */
   article {
     padding: 0 8%;
   }
 
-  /* line 256, ../sass/screen.scss */
+  /* line 331, ../sass/screen.scss */
   header nav ul {
     line-height: 1.2cm;
     font-size: 1em;

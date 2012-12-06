@@ -14,7 +14,7 @@
     <h1>Data.Driven</h1>
     <h2>Web standards consultancy</h2>
     </a>
-    <h3>Raise your standards</h3>
+    <h3 id="orient">Raise your standards</h3>
   </hgroup>
   <nav>
     <ul>
@@ -32,48 +32,20 @@
 </article>
 <article id="services">
 <section>
-  <h1>Web Standards</h1>
-  <p>Writing a specification that builds on the Web Platform requires in-depth knowledge of its core technologies: <cite>HTML5</cite>, <cite>Web IDL</cite>, and <cite>ECMAScript</cite>. I can edit and review  specifications to make sure they will work well with the core Web Platform.  </p>
+  <h1 class="icon-docs">Web Standards</h1>
+  <p>Writing a specification that builds on the Web Platform requires in-depth knowledge of its core technologies: <cite>HTML</cite>, <cite>DOM</cite>, <cite>Web IDL</cite>, and <cite>ECMAScript</cite>. I can edit and review  specifications to make sure they will work well with the core technologies of the Web.  </p>
   </section>
   <section>
-  <h1>Prototypes</h1>
+  <h1 class="icon-beaker">Prototypes</h1>
   <p>Independent verification of a specification through prototyping can be a cost effective way of showing the technical completeness of a specification and demonstrating that a specification works as intended. I can prototype specifications in <cite>ECMAScript</cite>, <cite>Node.js</cite>, and <cite>Java</cite>. </p>
   </section>
   <section>
-  <h1>Quality Assurance</h1>
+  <h1 class="icon-tasks">Quality Assurance</h1>
   <p>Test suites are key to achieving interoperability in the standardization process. Knowing how much and what areas to test can improve the interoperability of products. I can design, code, or review test suites as well as produce high-quality implementation reports. </p>
 </section>
 </article>
-<p class="contact"><a class="button" href="mailto:marcos@datadriven.com.au">Get in touch!</a></p>
-<footer></footer>
-<script>
-(function(window){
-	var services = document.getElementById("services"),
-		aboutme = document.getElementById("aboutme"); 
-	
-	window.addEventListener("DOMContentLoaded", doMagic);
-	
-	
-	function doMagic(){
-		updateLayout(); 
-		window.document.documentElement.setAttribute("class", "js");
-		window.addEventListener("hashchange", updateLayout)
-	}
-	function updateLayout(e){
-		if(e){
-			e.preventDefault();	
-		}
-		switch(window.location.hash){
-			case ("#services/"):{
-				services.className = "show";
-				aboutme.className = "hide";
-				break;
-			}
-			default:{
-				services.className = "hide";
-				aboutme.className = "show";
-			}
-		}
-	}
-}(this))
-</script>
+<footer>
+<p class="contact"><a class="button icon-mail-alt" href="mailto:marcos@datadriven.com.au">Get in touch!</a></p>
+<div id="out"></div>
+</footer>
+<script src="/js/nav.js"></script>
